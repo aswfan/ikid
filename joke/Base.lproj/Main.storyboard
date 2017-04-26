@@ -48,6 +48,9 @@
                             <constraint firstItem="gVD-ns-Bet" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ue7-Sy-X3E"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="gVD-ns-Bet" id="ndy-Nx-xN3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,7 +78,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cant_sleep_thumb.png" translatesAutoresizingMaskIntoConstraints="NO" id="9y4-Sx-Ifn">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9y4-Sx-Ifn">
                                         <rect key="frame" x="12" y="35" width="216" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -155,7 +158,4 @@
             <point key="canvasLocation" x="964" y="612"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="cant_sleep_thumb.png" width="744" height="248"/>
-    </resources>
 </document>

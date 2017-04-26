@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var index_ = 2
     var map = ["first", "second", "third"]
     
+    @IBOutlet weak var welcomeLabel: UILabel!
     var pre_controller: UIViewController? = nil
 
     @IBAction func NextView(_ sender: UIButton) {
@@ -39,6 +40,9 @@ class ViewController: UIViewController {
             from!.willMove(toParentViewController: nil)
             from!.view.removeFromSuperview()
             from!.removeFromParentViewController()
+        }
+        else {
+            welcomeLabel.removeFromSuperview()
         }
         if to != nil {
             self.addChildViewController(to!)
