@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D7DE9071EB01D53003CD4BB /* cant_sleep_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DE9061EB01D53003CD4BB /* cant_sleep_thumb.png */; };
+		9D7DE9091EB01D72003CD4BB /* geek-modern-life.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DE9081EB01D72003CD4BB /* geek-modern-life.jpg */; };
 		9D87D2111EAEB81C008D533A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87D2101EAEB81C008D533A /* AppDelegate.swift */; };
 		9D87D2131EAEB81C008D533A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87D2121EAEB81C008D533A /* ViewController.swift */; };
 		9D87D2161EAEB81C008D533A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D87D2141EAEB81C008D533A /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D7DE9061EB01D53003CD4BB /* cant_sleep_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cant_sleep_thumb.png; path = ../../cant_sleep_thumb.png; sourceTree = "<group>"; };
+		9D7DE9081EB01D72003CD4BB /* geek-modern-life.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "geek-modern-life.jpg"; path = "../../geek-modern-life.jpg"; sourceTree = "<group>"; };
 		9D87D20D1EAEB81C008D533A /* joke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = joke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D87D2101EAEB81C008D533A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D87D2121EAEB81C008D533A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 		9D87D20F1EAEB81C008D533A /* joke */ = {
 			isa = PBXGroup;
 			children = (
+				9D7DE9081EB01D72003CD4BB /* geek-modern-life.jpg */,
+				9D7DE9061EB01D53003CD4BB /* cant_sleep_thumb.png */,
 				9D87D2101EAEB81C008D533A /* AppDelegate.swift */,
 				9D87D2121EAEB81C008D533A /* ViewController.swift */,
 				9D87D2141EAEB81C008D533A /* Main.storyboard */,
@@ -241,8 +247,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7DE9071EB01D53003CD4BB /* cant_sleep_thumb.png in Resources */,
 				9D87D21B1EAEB81C008D533A /* LaunchScreen.storyboard in Resources */,
 				9D87D2181EAEB81C008D533A /* Assets.xcassets in Resources */,
+				9D7DE9091EB01D72003CD4BB /* geek-modern-life.jpg in Resources */,
 				9D87D2161EAEB81C008D533A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +527,7 @@
 				9D87D2371EAEB81C008D533A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D87D2381EAEB81C008D533A /* Build configuration list for PBXNativeTarget "jokeTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +536,7 @@
 				9D87D23A1EAEB81C008D533A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D87D23B1EAEB81C008D533A /* Build configuration list for PBXNativeTarget "jokeUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +545,7 @@
 				9D87D23D1EAEB81C008D533A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
