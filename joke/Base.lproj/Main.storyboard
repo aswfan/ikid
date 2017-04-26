@@ -98,7 +98,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cant_sleep_thumb.png" translatesAutoresizingMaskIntoConstraints="NO" id="2IT-LY-Zhb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cant_sleep_thumb.png" translatesAutoresizingMaskIntoConstraints="NO" id="2IT-LY-Zhb">
                                 <rect key="frame" x="26" y="209" width="323" height="248"/>
                             </imageView>
                         </subviews>
@@ -127,7 +127,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xkcd_thumb.png" translatesAutoresizingMaskIntoConstraints="NO" id="tuv-Be-xa5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xkcd_thumb.png" translatesAutoresizingMaskIntoConstraints="NO" id="tuv-Be-xa5">
                                 <rect key="frame" x="26" y="228.5" width="323" height="209"/>
                             </imageView>
                         </subviews>
