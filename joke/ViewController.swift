@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITabBarDelegate {
         
         index_ = BEGINNING_OF_INDEX
         tabItemTag = item.tag
-        print("tag:\(tabItemTag)")
+//        print("tag:\(tabItemTag)")
         
         var controller: UIViewController? = nil
         switch item {
