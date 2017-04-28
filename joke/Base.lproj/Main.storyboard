@@ -22,34 +22,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kXy-DQ-f5N">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wcK-F6-LfJ"/>
-                                    <barButtonItem title="Next" id="Mo6-qz-gbJ">
-                                        <connections>
-                                            <action selector="NextView:" destination="BYZ-38-t0r" id="qIW-qr-HQg"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want some joke?  Press the &quot;Next&quot; at the bottom!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVD-ns-Bet">
-                                <rect key="frame" x="42.5" y="309" width="291.5" height="50.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want some jokes?  Press the tab at the bottom!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVD-ns-Bet">
+                                <rect key="frame" x="57.5" y="308" width="261" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbZ-jc-XP2">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Good" image="Neutral-50" id="LcE-ba-Z8b"/>
+                                    <tabBarItem tag="1" title="Pun" image="Happy-50" id="Zb8-M1-8wz"/>
+                                    <tabBarItem tag="2" title="Dad" image="LOL-50" id="nZV-vF-YY0"/>
+                                </items>
+                            </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWP-qZ-SnU">
+                                <rect key="frame" x="327" y="578" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="NextView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9WM-aJ-OHm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kXy-DQ-f5N" secondAttribute="bottom" id="Bbe-2Q-6ws"/>
+                            <constraint firstItem="dbZ-jc-XP2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Kt-xA-YwI"/>
+                            <constraint firstItem="dbZ-jc-XP2" firstAttribute="top" secondItem="qWP-qZ-SnU" secondAttribute="bottom" constant="10" id="8Rj-Du-NxV"/>
                             <constraint firstItem="gVD-ns-Bet" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UR0-Oc-if1"/>
-                            <constraint firstAttribute="trailing" secondItem="kXy-DQ-f5N" secondAttribute="trailing" id="V1Y-yu-fbj"/>
-                            <constraint firstItem="kXy-DQ-f5N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nxZ-9X-gBr"/>
+                            <constraint firstAttribute="trailing" secondItem="dbZ-jc-XP2" secondAttribute="trailing" id="d74-H0-0yd"/>
+                            <constraint firstItem="qWP-qZ-SnU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rMr-nQ-1mu"/>
                             <constraint firstItem="gVD-ns-Bet" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ue7-Sy-X3E"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dbZ-jc-XP2" secondAttribute="bottom" id="y6W-6a-l1A"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryTabBar" destination="dbZ-jc-XP2" id="qh6-49-lIf"/>
+                        <outlet property="dadTab" destination="nZV-vF-YY0" id="OHE-YR-9X5"/>
+                        <outlet property="goodTab" destination="LcE-ba-Z8b" id="AVc-BO-a9O"/>
+                        <outlet property="punTab" destination="Zb8-M1-8wz" id="May-l7-WH6"/>
                         <outlet property="welcomeLabel" destination="gVD-ns-Bet" id="ndy-Nx-xN3"/>
                     </connections>
                 </viewController>
@@ -60,7 +71,7 @@
         <!--First Category View Controller-->
         <scene sceneID="D7Z-08-4ht">
             <objects>
-                <viewController storyboardIdentifier="first" id="PQF-lL-cWv" customClass="FirstCategoryViewController" customModule="joke" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="good_0" id="PQF-lL-cWv" customClass="FirstCategoryViewController" customModule="joke" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XKY-Rz-5o4"/>
                         <viewControllerLayoutGuide type="bottom" id="2tT-fg-9dz"/>
@@ -86,10 +97,111 @@
             </objects>
             <point key="canvasLocation" x="637.60000000000002" y="-600.44977511244383"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="BXV-J8-fD7">
+            <objects>
+                <viewController storyboardIdentifier="good_1" id="ecs-dq-fzh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A8u-RN-UZW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Clk-W7-KCa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EwK-BN-WAP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fm2-5d-Az8">
+                                <rect key="frame" x="86" y="303" width="203" height="61"/>
+                                <string key="text">Someone called it magic:
+Programmer is a machine 
+that turns coffee into code</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fm2-5d-Az8" firstAttribute="centerX" secondItem="EwK-BN-WAP" secondAttribute="centerX" id="paD-Xh-cLs"/>
+                            <constraint firstItem="Fm2-5d-Az8" firstAttribute="centerY" secondItem="EwK-BN-WAP" secondAttribute="centerY" id="qyf-L5-R7X"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="58l-UU-KAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1382" y="-692"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jda-ha-ZaJ">
+            <objects>
+                <viewController storyboardIdentifier="pun_1" id="TfQ-Aw-bA1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Tl-5P-3sH"/>
+                        <viewControllerLayoutGuide type="bottom" id="jtu-xu-JBe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bpW-hO-P4l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4X-h0-9as">
+                                <rect key="frame" x="31" y="303" width="314" height="61"/>
+                                <string key="text">Algorithm:
+Word used by programmers when ...
+they do not want to explain what they did</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e4X-h0-9as" firstAttribute="centerY" secondItem="bpW-hO-P4l" secondAttribute="centerY" id="tLQ-T3-80u"/>
+                            <constraint firstItem="e4X-h0-9as" firstAttribute="centerX" secondItem="bpW-hO-P4l" secondAttribute="centerX" id="uIO-gL-A0S"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KdC-fA-YN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2079" y="-584"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qrF-GI-pXL">
+            <objects>
+                <viewController storyboardIdentifier="dad_1" id="kx1-fl-KNa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1y8-Xp-Ych"/>
+                        <viewControllerLayoutGuide type="bottom" id="RHq-fS-rUK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zXw-0U-nVA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfG-Jl-nNT">
+                                <rect key="frame" x="5.5" y="288" width="364" height="90"/>
+                                <string key="text">A guy walks into a bar and asks for 1.014 root beers.
+The bartender says, 
+“I’ll have to charge you extra, that’s a root beer float”.
+So the guy says, 
+“In that case, better make it a double.”</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FfG-Jl-nNT" firstAttribute="centerY" secondItem="zXw-0U-nVA" secondAttribute="centerY" id="SXh-Et-z7M"/>
+                            <constraint firstItem="FfG-Jl-nNT" firstAttribute="centerX" secondItem="zXw-0U-nVA" secondAttribute="centerX" id="oyR-VK-6bL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9RN-nk-zaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2738" y="-476"/>
+        </scene>
         <!--Second Category View Controller-->
         <scene sceneID="axZ-7R-dut">
             <objects>
-                <viewController storyboardIdentifier="second" id="l5k-5F-ihd" customClass="SecondCategoryViewController" customModule="joke" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pun_0" id="l5k-5F-ihd" customClass="SecondCategoryViewController" customModule="joke" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ghZ-FG-xsW"/>
                         <viewControllerLayoutGuide type="bottom" id="hi4-J0-Dpg"/>
@@ -118,7 +230,7 @@
         <!--Third Category View Controller-->
         <scene sceneID="YOL-wG-MMF">
             <objects>
-                <viewController storyboardIdentifier="third" id="F7n-g9-cQa" customClass="ThirdCategoryViewController" customModule="joke" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dad_0" id="F7n-g9-cQa" customClass="ThirdCategoryViewController" customModule="joke" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mem-Kg-uW6"/>
                         <viewControllerLayoutGuide type="bottom" id="f68-O0-uZw"/>
@@ -146,6 +258,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Happy-50" width="25" height="25"/>
+        <image name="LOL-50" width="25" height="25"/>
+        <image name="Neutral-50" width="25" height="25"/>
         <image name="battle_between-vi_and_emacs.gif" width="720" height="274"/>
         <image name="cant_sleep_thumb.png" width="744" height="248"/>
         <image name="xkcd_thumb.png" width="670" height="209"/>

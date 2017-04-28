@@ -17,6 +17,9 @@
 		9D87D23F1EAEBC93008D533A /* FirstCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87D23E1EAEBC93008D533A /* FirstCategoryViewController.swift */; };
 		9D87D2411EAEBCA3008D533A /* SecondCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87D2401EAEBCA3008D533A /* SecondCategoryViewController.swift */; };
 		9D87D2431EAEBCAD008D533A /* ThirdCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87D2421EAEBCAD008D533A /* ThirdCategoryViewController.swift */; };
+		9DC7059B1EB2B89A00F5B71B /* LOL-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC705991EB2B89A00F5B71B /* LOL-50.png */; };
+		9DC7059C1EB2B89A00F5B71B /* Neutral-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7059A1EB2B89A00F5B71B /* Neutral-50.png */; };
+		9DC7059E1EB2B8B300F5B71B /* Happy-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7059D1EB2B8B300F5B71B /* Happy-50.png */; };
 		9DF79D011EB024620073B159 /* xkcd_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF79D001EB024620073B159 /* xkcd_thumb.png */; };
 		9DF79D041EB0246C0073B159 /* battle_between-vi_and_emacs.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9DF79D021EB0246C0073B159 /* battle_between-vi_and_emacs.gif */; };
 		9DF79D051EB0246C0073B159 /* cant_sleep_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF79D031EB0246C0073B159 /* cant_sleep_thumb.png */; };
@@ -56,6 +59,9 @@
 		9D87D23E1EAEBC93008D533A /* FirstCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCategoryViewController.swift; sourceTree = "<group>"; };
 		9D87D2401EAEBCA3008D533A /* SecondCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondCategoryViewController.swift; sourceTree = "<group>"; };
 		9D87D2421EAEBCAD008D533A /* ThirdCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdCategoryViewController.swift; sourceTree = "<group>"; };
+		9DC705991EB2B89A00F5B71B /* LOL-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LOL-50.png"; sourceTree = SOURCE_ROOT; };
+		9DC7059A1EB2B89A00F5B71B /* Neutral-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Neutral-50.png"; sourceTree = SOURCE_ROOT; };
+		9DC7059D1EB2B8B300F5B71B /* Happy-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Happy-50.png"; sourceTree = SOURCE_ROOT; };
 		9DF79D001EB024620073B159 /* xkcd_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xkcd_thumb.png; sourceTree = SOURCE_ROOT; };
 		9DF79D021EB0246C0073B159 /* battle_between-vi_and_emacs.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "battle_between-vi_and_emacs.gif"; sourceTree = SOURCE_ROOT; };
 		9DF79D031EB0246C0073B159 /* cant_sleep_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cant_sleep_thumb.png; sourceTree = SOURCE_ROOT; };
@@ -109,6 +115,7 @@
 		9D87D20F1EAEB81C008D533A /* joke */ = {
 			isa = PBXGroup;
 			children = (
+				9DC7059D1EB2B8B300F5B71B /* Happy-50.png */,
 				9DF79D021EB0246C0073B159 /* battle_between-vi_and_emacs.gif */,
 				9DF79D031EB0246C0073B159 /* cant_sleep_thumb.png */,
 				9DF79D001EB024620073B159 /* xkcd_thumb.png */,
@@ -116,6 +123,8 @@
 				9D87D2121EAEB81C008D533A /* ViewController.swift */,
 				9D87D2141EAEB81C008D533A /* Main.storyboard */,
 				9D87D2171EAEB81C008D533A /* Assets.xcassets */,
+				9DC705991EB2B89A00F5B71B /* LOL-50.png */,
+				9DC7059A1EB2B89A00F5B71B /* Neutral-50.png */,
 				9D87D2191EAEB81C008D533A /* LaunchScreen.storyboard */,
 				9D87D21C1EAEB81C008D533A /* Info.plist */,
 				9D87D23E1EAEBC93008D533A /* FirstCategoryViewController.swift */,
@@ -254,7 +263,10 @@
 				9D87D21B1EAEB81C008D533A /* LaunchScreen.storyboard in Resources */,
 				9D87D2181EAEB81C008D533A /* Assets.xcassets in Resources */,
 				9DF79D011EB024620073B159 /* xkcd_thumb.png in Resources */,
+				9DC7059E1EB2B8B300F5B71B /* Happy-50.png in Resources */,
+				9DC7059B1EB2B89A00F5B71B /* LOL-50.png in Resources */,
 				9DF79D041EB0246C0073B159 /* battle_between-vi_and_emacs.gif in Resources */,
+				9DC7059C1EB2B89A00F5B71B /* Neutral-50.png in Resources */,
 				9D87D2161EAEB81C008D533A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
